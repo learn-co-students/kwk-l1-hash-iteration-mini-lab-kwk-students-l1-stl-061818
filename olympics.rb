@@ -5,11 +5,9 @@ summer_olympics = {
     "London" => 2012
 }
 
-# summer_olympics["Atlanta"] = 1996
 
 summer_olympics["Atlanta"] = 1996
 
-# puts summer_olympics[1996].insert(0,"Atlanta")
 
 puts summer_olympics
 
