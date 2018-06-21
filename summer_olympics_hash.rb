@@ -10,16 +10,23 @@
     add_a_key_value_pair = summer_olympics_hash
   
   add_a_key_value_pair.each {|key, value| 
-  puts "The #{key} summer olympics took place in #{value}."
+  puts "The #{value} summer olympics took place in #{key}."
     
   }
   
-  upcased_cities = {"sydney","athens","beijing","london","atlanta"
-  }
-  upcased_cities.each do |city|
-    puts "#{city}".upcase
+  upcased_cities = add_a_key_value_pair.map {|key, value| key.upcase}
   
-end
+  upcased_cities.each {|city| puts city }
+  
+  
+  
+  
+  # upcased_cities = {"sydney","athens","beijing","london","atlanta"
+  # }
+  # upcased_cities.each do |city|
+  #   puts "#{city}".upcase
+  
+# end
 #   end
   # Implement this method so that it returns a hash with the data provided on README.md
 
